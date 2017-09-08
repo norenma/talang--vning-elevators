@@ -34,10 +34,6 @@ Document how we start, simulate and monitor your solution. If there is a GUI or 
 
 Have fun! This is not a trap. It is a code challenge to check coding style etc. If there are features you don't have time to add or if you have future changes in mind, write comments or document them.
 
-### Deliver Your Solution
-
-Add the code to a github or bitbucket repository. You can also make an archive of the project and e-mail it to us. We would like to see your solution within 7 days.
- 
 ## Build And Run (as is)
 
 As the project is, the Spring app can be started as seen below.
