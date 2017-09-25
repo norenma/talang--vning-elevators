@@ -1,6 +1,7 @@
 package se.cygni.codechallenge.elevator.api;
 
 import java.util.List;
+import java.util.Optional;
 
 
 /**
@@ -18,7 +19,7 @@ interface ElevatorController {
      *            addressed floor as integer.
      * @return The Elevator that is going to the floor, if there is one to move.
      */
-    Elevator requestElevator(int toFloor);
+    Optional<Elevator> requestElevator(int toFloor);
 
     /**
      * A snapshot list of all elevators in the system.
@@ -35,5 +36,7 @@ interface ElevatorController {
      *            the elevator that shall be released.
      */
     void releaseElevator(Elevator elevator);
+
+    void addToQueue(User user);
 
 }

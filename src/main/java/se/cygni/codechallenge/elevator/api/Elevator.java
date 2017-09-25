@@ -1,12 +1,14 @@
 package se.cygni.codechallenge.elevator.api;
 
+import java.util.Observable;
+
 /**
  * Interface for an elevator object.
  *
  * @author Sven Wesley
  *
  */
-interface Elevator {
+public interface Elevator {
 
     /**
      * Enumeration for describing elevator's direction.
@@ -57,5 +59,13 @@ interface Elevator {
      * @return int actual floor at the moment.
      */
     int currentFloor();
+
+    int distanceTo(int toFloor);
+
+    boolean isFull();
+
+    Observable getElevatorFreeObservable();
+
+    void addUser(User user);
 
 }
